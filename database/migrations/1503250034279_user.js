@@ -13,7 +13,7 @@ class UserSchema extends Schema {
       table.timestamps()
     })
   }
-
+//Hola
   down () {
     this.drop('users')
   }
