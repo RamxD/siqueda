@@ -9,6 +9,8 @@
  */
 
 const User = use('App/Models/User')
+const Env = use('Env')
+const Logger = use('Logger')
 
 class UserController {
   /**
@@ -117,6 +119,7 @@ class UserController {
     }
     return response.send({message:{error:'This user does not xdexist! or your password is incorrect, please try again.', status: 203}})
   }
+  
 }
 
 module.exports = UserController

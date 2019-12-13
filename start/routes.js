@@ -18,8 +18,9 @@ const Route = use('Route')
 
 Route.resource('api/v1/users', 'UserController').apiOnly();
 
-Route.post('api/v1/login', 'UserController.login');
 
+Route.post('/api/v1/auth/login', 'AuthController.login');
+Route.post('api/v1/login', 'UserController.login');
 Route.resource('api/v1/list', 'ListaController').apiOnly();
 Route.resource('api/v1/tarea', 'TareaController').apiOnly();
 Route.get('api/v1/lista/tarea/:id', 'ListaController.showTareas');
