@@ -20,7 +20,7 @@ test('[Login] Request access with bad email', async ({ client }) => {
   // Send request to API with invalid email
   const response = await client.post('/api/v1/login')
     .send({
-      email: 'bad_email@example.com',
+      email: 'test@yopmail.com',
       password: 'password'
     })
     .end()
